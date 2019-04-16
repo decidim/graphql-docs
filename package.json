@@ -15,7 +15,8 @@
     "test": "echo 'No tests yet :-('",
     "lint": "./node_modules/.bin/eslint src",
     "flow": "./node_modules/.bin/flow check",
-    "postinstall": "bash scripts/build.sh"
+    "prepare": "bash scripts/build.sh",
+    "prepublish": "bash scripts/build.sh"
   },
   "keywords": [
     "graphql",
