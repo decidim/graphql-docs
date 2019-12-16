@@ -1,5 +1,10 @@
 .container {
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.7rem;
+    font-family: monospace;
+    background: #f0f0f9;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #ddd;
 }
 
 .name {

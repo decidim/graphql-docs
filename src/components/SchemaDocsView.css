@@ -5,14 +5,12 @@
 }
 
 .container {
-    padding-right: 10%;
-    padding-left: 10%;
 }
 
 .content {
     display: flex;
     justify-content: center;
-    margin-left: 270px;
+    margin-left: 250px;
 }
 
 .sidenav {
@@ -22,8 +20,8 @@
     bottom: 0;
     left: 0;
     width: 250px;
+    background: #f0f0f0;
 }
-
 .sidenav::-webkit-scrollbar
 {
     width: 12px;
@@ -36,7 +34,15 @@
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
     background-color: #d0d0d0;
 }
-
+@media only screen and (max-width: 767px) {
+    .sidenav {
+        display: none;
+    }
+    .content {
+        margin-left: 0px;
+        display: block;
+    }
+}
 .selectInput {
     display: block;
     border-radius: 10px;

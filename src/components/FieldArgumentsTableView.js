@@ -22,7 +22,7 @@ export class FieldArgumentsTableView extends React.Component {
         }
 
         return (
-            <table className={StyleSheet.table}>
+            <table className={StyleSheet.descriptionTable}>
                 <thead>
                     <tr>
                         <th

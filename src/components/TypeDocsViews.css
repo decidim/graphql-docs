@@ -2,8 +2,16 @@
     margin-bottom: 20px;
 }
 
+.type pre {
+    width: 100%;
+    padding:1rem 0;
+    border: 1px solid #e8e8e8;
+    background: #f0f0f0;
+    font-size: 0.9rem;
+
+}
 .heading {
-    margin-bottom: 0.5rem;
+    margin: 3rem 0 2rem 0;
 }
 
 .subHeading {

@@ -2512,7 +2512,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 19 */
 /***/ (function(module, exports) {
 
-	/** @license React v16.8.6
+	/** @license React v16.12.0
 	 * react-is.production.min.js
 	 *
 	 * Copyright (c) Facebook, Inc. and its affiliates.
@@ -2522,18 +2522,18 @@ return /******/ (function(modules) { // webpackBootstrap
 	 */
 	
 	'use strict';Object.defineProperty(exports,"__esModule",{value:!0});
-	var b="function"===typeof Symbol&&Symbol.for,c=b?Symbol.for("react.element"):60103,d=b?Symbol.for("react.portal"):60106,e=b?Symbol.for("react.fragment"):60107,f=b?Symbol.for("react.strict_mode"):60108,g=b?Symbol.for("react.profiler"):60114,h=b?Symbol.for("react.provider"):60109,k=b?Symbol.for("react.context"):60110,l=b?Symbol.for("react.async_mode"):60111,m=b?Symbol.for("react.concurrent_mode"):60111,n=b?Symbol.for("react.forward_ref"):60112,p=b?Symbol.for("react.suspense"):60113,q=b?Symbol.for("react.memo"):
-	60115,r=b?Symbol.for("react.lazy"):60116;function t(a){if("object"===typeof a&&null!==a){var u=a.$$typeof;switch(u){case c:switch(a=a.type,a){case l:case m:case e:case g:case f:case p:return a;default:switch(a=a&&a.$$typeof,a){case k:case n:case h:return a;default:return u}}case r:case q:case d:return u}}}function v(a){return t(a)===m}exports.typeOf=t;exports.AsyncMode=l;exports.ConcurrentMode=m;exports.ContextConsumer=k;exports.ContextProvider=h;exports.Element=c;exports.ForwardRef=n;
-	exports.Fragment=e;exports.Lazy=r;exports.Memo=q;exports.Portal=d;exports.Profiler=g;exports.StrictMode=f;exports.Suspense=p;exports.isValidElementType=function(a){return"string"===typeof a||"function"===typeof a||a===e||a===m||a===g||a===f||a===p||"object"===typeof a&&null!==a&&(a.$$typeof===r||a.$$typeof===q||a.$$typeof===h||a.$$typeof===k||a.$$typeof===n)};exports.isAsyncMode=function(a){return v(a)||t(a)===l};exports.isConcurrentMode=v;exports.isContextConsumer=function(a){return t(a)===k};
-	exports.isContextProvider=function(a){return t(a)===h};exports.isElement=function(a){return"object"===typeof a&&null!==a&&a.$$typeof===c};exports.isForwardRef=function(a){return t(a)===n};exports.isFragment=function(a){return t(a)===e};exports.isLazy=function(a){return t(a)===r};exports.isMemo=function(a){return t(a)===q};exports.isPortal=function(a){return t(a)===d};exports.isProfiler=function(a){return t(a)===g};exports.isStrictMode=function(a){return t(a)===f};
-	exports.isSuspense=function(a){return t(a)===p};
+	var b="function"===typeof Symbol&&Symbol.for,c=b?Symbol.for("react.element"):60103,d=b?Symbol.for("react.portal"):60106,e=b?Symbol.for("react.fragment"):60107,f=b?Symbol.for("react.strict_mode"):60108,g=b?Symbol.for("react.profiler"):60114,h=b?Symbol.for("react.provider"):60109,k=b?Symbol.for("react.context"):60110,l=b?Symbol.for("react.async_mode"):60111,m=b?Symbol.for("react.concurrent_mode"):60111,n=b?Symbol.for("react.forward_ref"):60112,p=b?Symbol.for("react.suspense"):60113,q=b?Symbol.for("react.suspense_list"):
+	60120,r=b?Symbol.for("react.memo"):60115,t=b?Symbol.for("react.lazy"):60116,v=b?Symbol.for("react.fundamental"):60117,w=b?Symbol.for("react.responder"):60118,x=b?Symbol.for("react.scope"):60119;function y(a){if("object"===typeof a&&null!==a){var u=a.$$typeof;switch(u){case c:switch(a=a.type,a){case l:case m:case e:case g:case f:case p:return a;default:switch(a=a&&a.$$typeof,a){case k:case n:case t:case r:case h:return a;default:return u}}case d:return u}}}function z(a){return y(a)===m}
+	exports.typeOf=y;exports.AsyncMode=l;exports.ConcurrentMode=m;exports.ContextConsumer=k;exports.ContextProvider=h;exports.Element=c;exports.ForwardRef=n;exports.Fragment=e;exports.Lazy=t;exports.Memo=r;exports.Portal=d;exports.Profiler=g;exports.StrictMode=f;exports.Suspense=p;
+	exports.isValidElementType=function(a){return"string"===typeof a||"function"===typeof a||a===e||a===m||a===g||a===f||a===p||a===q||"object"===typeof a&&null!==a&&(a.$$typeof===t||a.$$typeof===r||a.$$typeof===h||a.$$typeof===k||a.$$typeof===n||a.$$typeof===v||a.$$typeof===w||a.$$typeof===x)};exports.isAsyncMode=function(a){return z(a)||y(a)===l};exports.isConcurrentMode=z;exports.isContextConsumer=function(a){return y(a)===k};exports.isContextProvider=function(a){return y(a)===h};
+	exports.isElement=function(a){return"object"===typeof a&&null!==a&&a.$$typeof===c};exports.isForwardRef=function(a){return y(a)===n};exports.isFragment=function(a){return y(a)===e};exports.isLazy=function(a){return y(a)===t};exports.isMemo=function(a){return y(a)===r};exports.isPortal=function(a){return y(a)===d};exports.isProfiler=function(a){return y(a)===g};exports.isStrictMode=function(a){return y(a)===f};exports.isSuspense=function(a){return y(a)===p};
 
 
 /***/ }),
 /* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {/** @license React v16.8.6
+	/* WEBPACK VAR INJECTION */(function(process) {/** @license React v16.12.0
 	 * react-is.development.js
 	 *
 	 * Copyright (c) Facebook, Inc. and its affiliates.
@@ -2555,25 +2555,29 @@ return /******/ (function(modules) { // webpackBootstrap
 	// The Symbol used to tag the ReactElement-like types. If there is no native Symbol
 	// nor polyfill, then a plain number is used for performance.
 	var hasSymbol = typeof Symbol === 'function' && Symbol.for;
-	
 	var REACT_ELEMENT_TYPE = hasSymbol ? Symbol.for('react.element') : 0xeac7;
 	var REACT_PORTAL_TYPE = hasSymbol ? Symbol.for('react.portal') : 0xeaca;
 	var REACT_FRAGMENT_TYPE = hasSymbol ? Symbol.for('react.fragment') : 0xeacb;
 	var REACT_STRICT_MODE_TYPE = hasSymbol ? Symbol.for('react.strict_mode') : 0xeacc;
 	var REACT_PROFILER_TYPE = hasSymbol ? Symbol.for('react.profiler') : 0xead2;
 	var REACT_PROVIDER_TYPE = hasSymbol ? Symbol.for('react.provider') : 0xeacd;
-	var REACT_CONTEXT_TYPE = hasSymbol ? Symbol.for('react.context') : 0xeace;
+	var REACT_CONTEXT_TYPE = hasSymbol ? Symbol.for('react.context') : 0xeace; // TODO: We don't use AsyncMode or ConcurrentMode anymore. They were temporary
+	// (unstable) APIs that have been removed. Can we remove the symbols?
+	
 	var REACT_ASYNC_MODE_TYPE = hasSymbol ? Symbol.for('react.async_mode') : 0xeacf;
 	var REACT_CONCURRENT_MODE_TYPE = hasSymbol ? Symbol.for('react.concurrent_mode') : 0xeacf;
 	var REACT_FORWARD_REF_TYPE = hasSymbol ? Symbol.for('react.forward_ref') : 0xead0;
 	var REACT_SUSPENSE_TYPE = hasSymbol ? Symbol.for('react.suspense') : 0xead1;
+	var REACT_SUSPENSE_LIST_TYPE = hasSymbol ? Symbol.for('react.suspense_list') : 0xead8;
 	var REACT_MEMO_TYPE = hasSymbol ? Symbol.for('react.memo') : 0xead3;
 	var REACT_LAZY_TYPE = hasSymbol ? Symbol.for('react.lazy') : 0xead4;
+	var REACT_FUNDAMENTAL_TYPE = hasSymbol ? Symbol.for('react.fundamental') : 0xead5;
+	var REACT_RESPONDER_TYPE = hasSymbol ? Symbol.for('react.responder') : 0xead6;
+	var REACT_SCOPE_TYPE = hasSymbol ? Symbol.for('react.scope') : 0xead7;
 	
 	function isValidElementType(type) {
-	  return typeof type === 'string' || typeof type === 'function' ||
-	  // Note: its typeof might be other than 'symbol' or 'number' if it's a polyfill.
-	  type === REACT_FRAGMENT_TYPE || type === REACT_CONCURRENT_MODE_TYPE || type === REACT_PROFILER_TYPE || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || typeof type === 'object' && type !== null && (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE);
+	  return typeof type === 'string' || typeof type === 'function' || // Note: its typeof might be other than 'symbol' or 'number' if it's a polyfill.
+	  type === REACT_FRAGMENT_TYPE || type === REACT_CONCURRENT_MODE_TYPE || type === REACT_PROFILER_TYPE || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || type === REACT_SUSPENSE_LIST_TYPE || typeof type === 'object' && type !== null && (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || type.$$typeof === REACT_FUNDAMENTAL_TYPE || type.$$typeof === REACT_RESPONDER_TYPE || type.$$typeof === REACT_SCOPE_TYPE);
 	}
 	
 	/**
@@ -2589,12 +2593,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * paths. Removing the logging code for production environments will keep the
 	 * same logic and follow the same code paths.
 	 */
-	
-	var lowPriorityWarning = function () {};
+	var lowPriorityWarningWithoutStack = function () {};
 	
 	{
 	  var printWarning = function (format) {
-	    for (var _len = arguments.length, args = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+	    for (var _len = arguments.length, args = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
 	      args[_key - 1] = arguments[_key];
 	    }
 	
@@ -2602,9 +2605,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	    var message = 'Warning: ' + format.replace(/%s/g, function () {
 	      return args[argIndex++];
 	    });
+	
 	    if (typeof console !== 'undefined') {
 	      console.warn(message);
 	    }
+	
 	    try {
 	      // --- Welcome to debugging React ---
 	      // This error was thrown as a convenience so that you can use this stack
@@ -2613,25 +2618,27 @@ return /******/ (function(modules) { // webpackBootstrap
 	    } catch (x) {}
 	  };
 	
-	  lowPriorityWarning = function (condition, format) {
+	  lowPriorityWarningWithoutStack = function (condition, format) {
 	    if (format === undefined) {
-	      throw new Error('`lowPriorityWarning(condition, format, ...args)` requires a warning ' + 'message argument');
+	      throw new Error('`lowPriorityWarningWithoutStack(condition, format, ...args)` requires a warning ' + 'message argument');
 	    }
+	
 	    if (!condition) {
-	      for (var _len2 = arguments.length, args = Array(_len2 > 2 ? _len2 - 2 : 0), _key2 = 2; _key2 < _len2; _key2++) {
+	      for (var _len2 = arguments.length, args = new Array(_len2 > 2 ? _len2 - 2 : 0), _key2 = 2; _key2 < _len2; _key2++) {
 	        args[_key2 - 2] = arguments[_key2];
 	      }
 	
-	      printWarning.apply(undefined, [format].concat(args));
+	      printWarning.apply(void 0, [format].concat(args));
 	    }
 	  };
 	}
 	
-	var lowPriorityWarning$1 = lowPriorityWarning;
+	var lowPriorityWarningWithoutStack$1 = lowPriorityWarningWithoutStack;
 	
 	function typeOf(object) {
 	  if (typeof object === 'object' && object !== null) {
 	    var $$typeof = object.$$typeof;
+	
 	    switch ($$typeof) {
 	      case REACT_ELEMENT_TYPE:
 	        var type = object.type;
@@ -2644,29 +2651,32 @@ return /******/ (function(modules) { // webpackBootstrap
 	          case REACT_STRICT_MODE_TYPE:
 	          case REACT_SUSPENSE_TYPE:
 	            return type;
+	
 	          default:
 	            var $$typeofType = type && type.$$typeof;
 	
 	            switch ($$typeofType) {
 	              case REACT_CONTEXT_TYPE:
 	              case REACT_FORWARD_REF_TYPE:
+	              case REACT_LAZY_TYPE:
+	              case REACT_MEMO_TYPE:
 	              case REACT_PROVIDER_TYPE:
 	                return $$typeofType;
+	
 	              default:
 	                return $$typeof;
 	            }
+	
 	        }
-	      case REACT_LAZY_TYPE:
-	      case REACT_MEMO_TYPE:
+	
 	      case REACT_PORTAL_TYPE:
 	        return $$typeof;
 	    }
 	  }
 	
 	  return undefined;
-	}
+	} // AsyncMode is deprecated along with isAsyncMode
 	
-	// AsyncMode is deprecated along with isAsyncMode
 	var AsyncMode = REACT_ASYNC_MODE_TYPE;
 	var ConcurrentMode = REACT_CONCURRENT_MODE_TYPE;
 	var ContextConsumer = REACT_CONTEXT_TYPE;
@@ -2680,17 +2690,16 @@ return /******/ (function(modules) { // webpackBootstrap
 	var Profiler = REACT_PROFILER_TYPE;
 	var StrictMode = REACT_STRICT_MODE_TYPE;
 	var Suspense = REACT_SUSPENSE_TYPE;
+	var hasWarnedAboutDeprecatedIsAsyncMode = false; // AsyncMode should be deprecated
 	
-	var hasWarnedAboutDeprecatedIsAsyncMode = false;
-	
-	// AsyncMode should be deprecated
 	function isAsyncMode(object) {
 	  {
 	    if (!hasWarnedAboutDeprecatedIsAsyncMode) {
 	      hasWarnedAboutDeprecatedIsAsyncMode = true;
-	      lowPriorityWarning$1(false, 'The ReactIs.isAsyncMode() alias has been deprecated, ' + 'and will be removed in React 17+. Update your code to use ' + 'ReactIs.isConcurrentMode() instead. It has the exact same API.');
+	      lowPriorityWarningWithoutStack$1(false, 'The ReactIs.isAsyncMode() alias has been deprecated, ' + 'and will be removed in React 17+. Update your code to use ' + 'ReactIs.isConcurrentMode() instead. It has the exact same API.');
 	    }
 	  }
+	
 	  return isConcurrentMode(object) || typeOf(object) === REACT_ASYNC_MODE_TYPE;
 	}
 	function isConcurrentMode(object) {
@@ -6456,7 +6465,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	
 	// module
-	exports.push([module.id, "._1S63EXzJ2LWrq2TSLX8cAu :first-child {\n    margin-top: 0;\n}\n\n._1S63EXzJ2LWrq2TSLX8cAu :last-child {\n    margin-bottom: 0;\n}\n\n._1S63EXzJ2LWrq2TSLX8cAu h1 {\n    font-size: 1.3em;\n}\n\n._1S63EXzJ2LWrq2TSLX8cAu h2 {\n    font-size: 1.1em;\n}\n\n._1S63EXzJ2LWrq2TSLX8cAu h3 {\n    font-size: 1em;\n    -webkit-font-feature-settings: \"c2sc\";\n            font-feature-settings: \"c2sc\";\n    font-variant: small-caps;\n}\n\n._1S63EXzJ2LWrq2TSLX8cAu blockquote {\n    border-left: 8px solid #e8e8e8;\n    margin-top: -0.3em;\n    padding-top: 0.3em;\n    margin-left: 20px;\n    padding-left: 12px;\n    margin-bottom: -0.5em;\n    padding-bottom: 0.5em;\n}\n", ""]);
+	exports.push([module.id, "._1S63EXzJ2LWrq2TSLX8cAu :first-child {\n    margin-top: 0;\n}\n\n._1S63EXzJ2LWrq2TSLX8cAu :last-child {\n    margin-bottom: 0;\n}\n\n._1S63EXzJ2LWrq2TSLX8cAu h1 {\n    font-size: 1.5em;\n}\n\n._1S63EXzJ2LWrq2TSLX8cAu h2 {\n    font-size: 1.3em;\n}\n\n._1S63EXzJ2LWrq2TSLX8cAu h3 {\n    font-size: 1.1em;\n    font-feature-settings: \"c2sc\";\n    font-variant: small-caps;\n}\n\n._1S63EXzJ2LWrq2TSLX8cAu blockquote {\n    border-left: 8px solid #e8e8e8;\n    margin-top: -0.3em;\n    padding-top: 0.3em;\n    margin-left: 20px;\n    padding-left: 12px;\n    margin-bottom: -0.5em;\n    padding-bottom: 0.5em;\n}\n", ""]);
 	
 	// exports
 	exports.locals = {
@@ -6869,7 +6878,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	
 	// module
-	exports.push([module.id, "._3vR6_dnRDTk7bHCVHkPY-v :first-child {\n    margin-top: 0;\n}\n\n._3vR6_dnRDTk7bHCVHkPY-v :last-child {\n    margin-bottom: 0;\n}\n\n._3vR6_dnRDTk7bHCVHkPY-v h1 {\n    font-size: 1.3em;\n}\n\n._3vR6_dnRDTk7bHCVHkPY-v h2 {\n    font-size: 1.1em;\n}\n\n._3vR6_dnRDTk7bHCVHkPY-v h3 {\n    font-size: 1em;\n    -webkit-font-feature-settings: \"c2sc\";\n            font-feature-settings: \"c2sc\";\n    font-variant: small-caps;\n}\n\n._3vR6_dnRDTk7bHCVHkPY-v blockquote {\n    border-left: 8px solid #e8e8e8;\n    margin-top: -0.3em;\n    padding-top: 0.3em;\n    margin-left: 20px;\n    padding-left: 12px;\n    margin-bottom: -0.5em;\n    padding-bottom: 0.5em;\n}\n", ""]);
+	exports.push([module.id, "._3vR6_dnRDTk7bHCVHkPY-v :first-child {\n    margin-top: 0;\n}\n\n._3vR6_dnRDTk7bHCVHkPY-v :last-child {\n    margin-bottom: 0;\n}\n\n._3vR6_dnRDTk7bHCVHkPY-v h1 {\n    font-size: 1.3em;\n}\n\n._3vR6_dnRDTk7bHCVHkPY-v h2 {\n    font-size: 1.1em;\n}\n\n._3vR6_dnRDTk7bHCVHkPY-v h3 {\n    font-size: 1em;\n    font-feature-settings: \"c2sc\";\n    font-variant: small-caps;\n}\n\n._3vR6_dnRDTk7bHCVHkPY-v blockquote {\n    border-left: 8px solid #e8e8e8;\n    margin-top: -0.3em;\n    padding-top: 0.3em;\n    margin-left: 20px;\n    padding-left: 12px;\n    margin-bottom: -0.5em;\n    padding-bottom: 0.5em;\n}\n", ""]);
 	
 	// exports
 	exports.locals = {
@@ -7224,7 +7233,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	
 	// module
-	exports.push([module.id, "html::-webkit-scrollbar\n{\n    width: 12px;\n    background-color: #f1f1f1;\n}\n\nhtml::-webkit-scrollbar-thumb\n{\n    border-radius: 10px;\n    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);\n    background-color: #d0d0d0;\n}\n\n._3_QndMLrl0DS7txXsKk5aM {\n    color: #5b2699;\n}\n\n._1QSb_Lywz03jNMCELm-GrU {\n    padding-right: 16px;\n    padding-right: 1rem;\n    white-space: nowrap;\n}\n\n._3a5669pwdwJabgmbtJHumc {\n    line-height: 1.3;\n}\n\n._3Xlbyq0Qo-JOAJLLx2z9-l {\n    color: #64381f;\n}\n\n.NgU4gHjdynLJU2YSbF4ic {\n    color: #836c28;\n}\n\n._15sahXcXCjIULC63jwKqZE {\n    color: #007400;\n    text-decoration: none;\n}\n\n._1ssUqN390ygEtVlxHSnU0e,\n._1ssUqN390ygEtVlxHSnU0e:active,\n._1ssUqN390ygEtVlxHSnU0e:hover,\n._1ssUqN390ygEtVlxHSnU0e:visited {\n    color: #007400;\n    text-decoration: none;\n}\n", ""]);
+	exports.push([module.id, "html::-webkit-scrollbar\n{\n    width: 12px;\n    background-color: #f1f1f1;\n}\n\nhtml::-webkit-scrollbar-thumb\n{\n    border-radius: 10px;\n    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);\n    background-color: #d0d0d0;\n}\n\n._3_QndMLrl0DS7txXsKk5aM {\n    color: #5b2699;\n}\n\n._1QSb_Lywz03jNMCELm-GrU {\n    padding-right: 8px;\n    padding-right: 0.5rem;\n    white-space: nowrap;\n    vertical-align: top;\n    font-family: monospace;\n    font-size: 14.4px;\n    font-size: 0.9rem;\n}\n\n._3a5669pwdwJabgmbtJHumc {\n    line-height: 1.3;\n    color: #333;\n}\n\n._3a5669pwdwJabgmbtJHumc code {\n    font-size: 0.8em;\n    background: #ddd;\n    padding: 0.1em;\n}\n\n._3Xlbyq0Qo-JOAJLLx2z9-l {\n    color: #64381f;\n}\n\n.NgU4gHjdynLJU2YSbF4ic {\n    color: #836c28;\n}\n\n._15sahXcXCjIULC63jwKqZE {\n    color: #007400;\n    text-decoration: none;\n}\n\n._1ssUqN390ygEtVlxHSnU0e,\n._1ssUqN390ygEtVlxHSnU0e:active,\n._1ssUqN390ygEtVlxHSnU0e:hover,\n._1ssUqN390ygEtVlxHSnU0e:visited {\n    color: #007400;\n    text-decoration: none;\n    font-family: monospace;\n    font-size: 14.4px;\n    font-size: 0.9rem;\n}\n", ""]);
 	
 	// exports
 	exports.locals = {
@@ -7272,7 +7281,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports.i(__webpack_require__(46), undefined);
 	
 	// module
-	exports.push([module.id, "._3Q9rTqv61jz1TMbQgSC21Y {\n    margin-bottom: 3.2px;\n    margin-bottom: 0.2rem;\n}\n\n.pfwgw1KVkaL-Jspb7XsLn {\n}\n\n._3qTEJI-SGaaBwcproq96Z9 {\n}\n\n._1C3jrn92-2_teD3Q_-WwDn {\n}\n", ""]);
+	exports.push([module.id, "._3Q9rTqv61jz1TMbQgSC21Y {\n    margin-bottom: 11.2px;\n    margin-bottom: 0.7rem;\n    font-family: monospace;\n    background: #f0f0f9;\n    padding: 8px;\n    padding: 0.5rem;\n    font-size: 14.4px;\n    font-size: 0.9rem;\n    border-bottom: 1px solid #ddd;\n}\n\n.pfwgw1KVkaL-Jspb7XsLn {\n}\n\n._3qTEJI-SGaaBwcproq96Z9 {\n}\n\n._1C3jrn92-2_teD3Q_-WwDn {\n}\n", ""]);
 	
 	// exports
 	exports.locals = {
@@ -7343,7 +7352,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	            return _react2.default.createElement(
 	                'table',
-	                { className: StyleSheet.table },
+	                { className: StyleSheet.descriptionTable },
 	                _react2.default.createElement(
 	                    'thead',
 	                    null,
@@ -7437,11 +7446,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports.i(__webpack_require__(46), undefined);
 	
 	// module
-	exports.push([module.id, "._2u0NKWFUVO10_7zl5FH1bX {\n    margin-top: 16px;\n    margin-top: 1rem;\n    margin-left: 32px;\n    margin-left: 2rem;\n    width: calc(100% - 2rem);\n}\n\n._14Noc9w-o_IUonJxsVOnBQ {\n    text-align: left;\n    font-size: 17.6px;\n    font-size: 1.1rem;\n    border-bottom: 1px solid #d9d9d9;\n}\n\n._3qzzdu41HzTOjXefzRE8dy {\n}\n\n._3g8_wlJYIQqfvRx4Tdzt4u {\n    width: 100%;\n}\n\n._1XONXofpDzZZq1kxZDtU2p {\n}\n\n.Sb22PNqbe2ZV1oFtChBAD {\n}\n", ""]);
+	exports.push([module.id, "._2u0NKWFUVO10_7zl5FH1bX, ._3fZn7jWVOIpol-tdacvUco {\n    margin-top: 16px;\n    margin-top: 1rem;\n    width: 100%;\n    padding: 0;\n    border: 1px solid #d9d9d9;\n    border-collapse: collapse;\n}\n._3fZn7jWVOIpol-tdacvUco {\n    margin-left: 32px;\n    margin-left: 2rem;\n    width: calc(100% - 2rem);\n}\n\n._3fZn7jWVOIpol-tdacvUco td, ._3fZn7jWVOIpol-tdacvUco th, ._2u0NKWFUVO10_7zl5FH1bX td, ._2u0NKWFUVO10_7zl5FH1bX th {\n    padding: 8px;\n    padding: 0.5rem;\n}\n\n._3fZn7jWVOIpol-tdacvUco tbody tr:nth-child(even), ._2u0NKWFUVO10_7zl5FH1bX tbody tr:nth-child(even) {\n  background-color: #f2f2f2;\n}\n\n._14Noc9w-o_IUonJxsVOnBQ {\n    text-align: left;\n    font-size: 16px;\n    font-size: 1rem;\n    background: #f0f0f0;\n    border-bottom: 1px solid #d9d9d9;\n    font-feature-settings: \"c2sc\";\n    font-variant: small-caps;\n    text-transform: uppercase;\n    font-weight: bold;\n    color: #4a4a4a;\n}\n\n._3qzzdu41HzTOjXefzRE8dy {\n}\n\n._3g8_wlJYIQqfvRx4Tdzt4u {\n    width: 100%;\n}\n\n._1XONXofpDzZZq1kxZDtU2p {\n}\n\n.Sb22PNqbe2ZV1oFtChBAD {\n}\n", ""]);
 	
 	// exports
 	exports.locals = {
 		"table": "_2u0NKWFUVO10_7zl5FH1bX",
+		"descriptionTable": "_3fZn7jWVOIpol-tdacvUco",
 		"header": "_14Noc9w-o_IUonJxsVOnBQ",
 		"key": "_3qzzdu41HzTOjXefzRE8dy " + __webpack_require__(46).locals["argumentCell"] + "",
 		"value": "_3g8_wlJYIQqfvRx4Tdzt4u",
@@ -7484,7 +7494,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	
 	// module
-	exports.push([module.id, "._2CI__araY4C94OAnkGP8Fv {\n    margin-bottom: 24px;\n    margin-bottom: 1.5rem;\n}\n\n._158AUimPZVUE217-1MuDQx {\n    margin-left: 32px;\n    margin-left: 2rem;\n}\n\n._158AUimPZVUE217-1MuDQx p {\n    margin-top: 0;\n}\n\n.Wbz0ueEU3TmlKLEUdOGVP {\n    font-weight: bold;\n    color: crimson;\n}\n\n.Wbz0ueEU3TmlKLEUdOGVP p {\n    margin-top: 0;\n}", ""]);
+	exports.push([module.id, "._2CI__araY4C94OAnkGP8Fv {\n    margin-bottom: 8px;\n    margin-bottom: 0.5rem;\n    margin-bottom: 16px;\n    margin-bottom: 1rem;\n    color: #333;\n}\n\n._158AUimPZVUE217-1MuDQx {\n    margin-left: 32px;\n    margin-left: 2rem;\n}\n\n._158AUimPZVUE217-1MuDQx p {\n    margin-top: 0;\n}\n\n.Wbz0ueEU3TmlKLEUdOGVP {\n    font-weight: bold;\n    color: crimson;\n}\n\n.Wbz0ueEU3TmlKLEUdOGVP p {\n    margin-top: 0;\n}", ""]);
 	
 	// exports
 	exports.locals = {
@@ -7528,7 +7538,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports.i(__webpack_require__(46), undefined);
 	
 	// module
-	exports.push([module.id, "._31nGuA4VcO5ASJ1Y-50NC0 {\n    margin-bottom: 20px;\n}\n\n._1hBwBkrQ8ZlOyOUcLvjRpt {\n    margin-bottom: 8px;\n    margin-bottom: 0.5rem;\n}\n\n._1gsHTtZCfZy0kwT90S9nZC {\n    -webkit-font-feature-settings: \"c2sc\";\n            font-feature-settings: \"c2sc\";\n    font-variant: small-caps;\n    text-transform: uppercase;\n    font-weight: bold;\n    color: #4a4a4a;\n    border-bottom: 1px solid #d9d9d9;\n    margin-top: 16px;\n    margin-top: 1rem;\n    margin-bottom: 8px;\n    margin-bottom: 0.5rem;\n}\n\n._2rkCQUiZ63eNMyTCRDL7GX {\n    list-style: none;\n    margin: 0;\n    padding: 0;\n}\n\n.hI41jTQ51eUSGSCTegJoD {\n}\n.gfgIAL-qhYjEMYBS3uxtp {\n    color: crimson;\n    text-decoration: line-through;\n}\n\n.bHFx-gWNy1lALB9MKGx6U {\n}\n", ""]);
+	exports.push([module.id, "._31nGuA4VcO5ASJ1Y-50NC0 {\n    margin-bottom: 20px;\n}\n\n._31nGuA4VcO5ASJ1Y-50NC0 pre {\n    width: 100%;\n    padding: 16px 0;\n    padding:1rem 0;\n    border: 1px solid #e8e8e8;\n    background: #f0f0f0;\n    font-size: 14.4px;\n    font-size: 0.9rem;\n\n}\n._1hBwBkrQ8ZlOyOUcLvjRpt {\n    margin: 48px 0 32px 0;\n    margin: 3rem 0 2rem 0;\n}\n\n._1gsHTtZCfZy0kwT90S9nZC {\n    font-feature-settings: \"c2sc\";\n    font-variant: small-caps;\n    text-transform: uppercase;\n    font-weight: bold;\n    color: #4a4a4a;\n    border-bottom: 1px solid #d9d9d9;\n    margin-top: 16px;\n    margin-top: 1rem;\n    margin-bottom: 8px;\n    margin-bottom: 0.5rem;\n}\n\n._2rkCQUiZ63eNMyTCRDL7GX {\n    list-style: none;\n    margin: 0;\n    padding: 0;\n}\n\n.hI41jTQ51eUSGSCTegJoD {\n}\n.gfgIAL-qhYjEMYBS3uxtp {\n    color: crimson;\n    text-decoration: line-through;\n}\n\n.bHFx-gWNy1lALB9MKGx6U {\n}\n", ""]);
 	
 	// exports
 	exports.locals = {
@@ -7639,7 +7649,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports.i(__webpack_require__(59), "");
 	
 	// module
-	exports.push([module.id, ".L1v8qWjjMTDbscwjQgB_s {\n    padding: 10px;\n}", ""]);
+	exports.push([module.id, ".L1v8qWjjMTDbscwjQgB_s {\n    padding: 10px 0;\n}\n\nh2 {\n\t\ttext-transform: uppercase;\n\t\tborder-bottom: 2px solid;\n\t\tmargin-bottom: 48px;\n\t\tmargin-bottom: 3rem;\n\t\tpadding-bottom: 8px;\n\t\tpadding-bottom: 0.5rem;\n}", ""]);
 	
 	// exports
 	exports.locals = {
@@ -7770,7 +7780,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports.i(__webpack_require__(59), "");
 	
 	// module
-	exports.push([module.id, "._1xGW5JKJn4TysMIRtV4bNC {\n    width: 100%;\n}\n\n._2MbtXVBhy0ow1PGFq442II,\n._1wz12CHPOX1ElLLZ7I3avj {\n    width: 100%;\n}\n\n._2MbtXVBhy0ow1PGFq442II > a,\n._1wz12CHPOX1ElLLZ7I3avj > a {\n    display: block;\n    width: 100%;\n    height: 100%;\n    padding: 10px;\n    text-decoration: none;\n    color: darkgray;\n}\n\n._2MbtXVBhy0ow1PGFq442II > a {\n    text-transform: uppercase;\n    color: #222222;\n}\n\n._1wz12CHPOX1ElLLZ7I3avj:hover,\n._2MbtXVBhy0ow1PGFq442II:hover {\n    background: lightgray;\n}", ""]);
+	exports.push([module.id, "._1xGW5JKJn4TysMIRtV4bNC {\n    width: 100%;\n}\n\n._2MbtXVBhy0ow1PGFq442II,\n._1wz12CHPOX1ElLLZ7I3avj {\n    width: 100%;\n}\n\n._2MbtXVBhy0ow1PGFq442II > a,\n._1wz12CHPOX1ElLLZ7I3avj > a {\n    display: block;\n    width: 100%;\n    padding: 7px 5px;\n    text-decoration: none;\n    color: dimgray;\n}\n\n._2MbtXVBhy0ow1PGFq442II > a {\n    text-transform: uppercase;\n    color: #333;\n    font-weight: bold;\n}\n\n._1wz12CHPOX1ElLLZ7I3avj:hover,\n._2MbtXVBhy0ow1PGFq442II:hover {\n    background: lightgray;\n}", ""]);
 	
 	// exports
 	exports.locals = {
@@ -7814,7 +7824,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports.i(__webpack_require__(59), "");
 	
 	// module
-	exports.push([module.id, "._2Wa9wu-awiDVZ9IXTPcyFt {\n    height: 100vh;\n}\n\n._38MtHDcUga2pYTxIRJJZ8o {\n    padding-right: 10%;\n    padding-left: 10%;\n}\n\n._2g11fbDuD18M7-sHGYuAfi {\n    display: -ms-flexbox;\n    display: flex;\n    -ms-flex-pack: center;\n        justify-content: center;\n    margin-left: 270px;\n}\n\n._8ogFihsx3UFu7jnisJFQh {\n    position: fixed;\n    overflow-y: scroll;\n    top: 0;\n    bottom: 0;\n    left: 0;\n    width: 250px;\n}\n\n._8ogFihsx3UFu7jnisJFQh::-webkit-scrollbar\n{\n    width: 12px;\n    background-color: #f1f1f1;\n}\n\n._8ogFihsx3UFu7jnisJFQh::-webkit-scrollbar-thumb\n{\n    border-radius: 10px;\n    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);\n    background-color: #d0d0d0;\n}\n\n._3LliCFvyD_zfkKsrqSHqky {\n    display: block;\n    border-radius: 10px;\n    border: 2px solid darkgray;\n    color: darkgray;\n    width: 220px;\n    font-size: 16px;\n    font-size: 1rem;\n    padding: 10px;\n    margin: 20px 10px 0 10px;\n}\n\n._3LliCFvyD_zfkKsrqSHqky:hover,\n._3LliCFvyD_zfkKsrqSHqky:focus\n{\n    outline: none;\n}\n\n._3UYhBB4Rkyjb1nRvUGQPGD {\n    list-style: none;\n    margin:0;\n    padding:0;\n}\n\n._2DORhY6kDat0gOnScCJ4kz {\n    padding: 3px 3px 3px 18px;\n    width: 100%;\n}\n\n._2DORhY6kDat0gOnScCJ4kz:hover {\n    background: lightgray;\n}\n\n._2DORhY6kDat0gOnScCJ4kz > a {\n    display: block;\n    width: 100%;\n    color: darkgray;\n    text-decoration: none;\n    padding: 3px;\n}\n\n._3EiuFTC5cjTgHZ9HNaG1AS {\n    background: lightgray;\n}", ""]);
+	exports.push([module.id, "._2Wa9wu-awiDVZ9IXTPcyFt {\n    height: 100vh;\n}\n\n._38MtHDcUga2pYTxIRJJZ8o {\n}\n\n._2g11fbDuD18M7-sHGYuAfi {\n    display: -ms-flexbox;\n    display: flex;\n    -ms-flex-pack: center;\n        justify-content: center;\n    margin-left: 250px;\n}\n\n._8ogFihsx3UFu7jnisJFQh {\n    position: fixed;\n    overflow-y: scroll;\n    top: 0;\n    bottom: 0;\n    left: 0;\n    width: 250px;\n    background: #f0f0f0;\n}\n._8ogFihsx3UFu7jnisJFQh::-webkit-scrollbar\n{\n    width: 12px;\n    background-color: #f1f1f1;\n}\n\n._8ogFihsx3UFu7jnisJFQh::-webkit-scrollbar-thumb\n{\n    border-radius: 10px;\n    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);\n    background-color: #d0d0d0;\n}\n@media only screen and (max-width: 767px) {\n    ._8ogFihsx3UFu7jnisJFQh {\n        display: none;\n    }\n    ._2g11fbDuD18M7-sHGYuAfi {\n        margin-left: 0px;\n        display: block;\n    }\n}\n._3LliCFvyD_zfkKsrqSHqky {\n    display: block;\n    border-radius: 10px;\n    border: 2px solid darkgray;\n    color: darkgray;\n    width: 220px;\n    font-size: 16px;\n    font-size: 1rem;\n    padding: 10px;\n    margin: 20px 10px 0 10px;\n}\n\n._3LliCFvyD_zfkKsrqSHqky:hover,\n._3LliCFvyD_zfkKsrqSHqky:focus\n{\n    outline: none;\n}\n\n._3UYhBB4Rkyjb1nRvUGQPGD {\n    list-style: none;\n    margin:0;\n    padding:0;\n}\n\n._2DORhY6kDat0gOnScCJ4kz {\n    padding: 3px 3px 3px 18px;\n    width: 100%;\n}\n\n._2DORhY6kDat0gOnScCJ4kz:hover {\n    background: lightgray;\n}\n\n._2DORhY6kDat0gOnScCJ4kz > a {\n    display: block;\n    width: 100%;\n    color: darkgray;\n    text-decoration: none;\n    padding: 3px;\n}\n\n._3EiuFTC5cjTgHZ9HNaG1AS {\n    background: lightgray;\n}", ""]);
 	
 	// exports
 	exports.locals = {

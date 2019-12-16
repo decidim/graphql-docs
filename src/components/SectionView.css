@@ -1,5 +1,12 @@
 @import "./_normalize.css";
 
 .section {
-    padding: 10px;
+    padding: 10px 0;
+}
+
+h2 {
+		text-transform: uppercase;
+		border-bottom: 2px solid;
+		margin-bottom: 3rem;
+		padding-bottom: 0.5rem;
 }
