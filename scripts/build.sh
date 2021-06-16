@@ -17,8 +17,8 @@ rm -rf ./dist ./lib
 for env in development production; do
     echo "Compiling with environment '$env'"
 
-    NODE_ENV=$env ./node_modules/.bin/webpack
+    NODE_ENV=$env npx webpack
 done
 
-./node_modules/.bin/babel -d lib src --ignore '*.flow.js'
+npx babel -d lib src --ignore '*.flow.js'
 cp src/introspectionQuery.txt lib/introspectionQuery.txt
