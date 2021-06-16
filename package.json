@@ -1,6 +1,6 @@
 {
   "name": "graphql-docs",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Dynamic documentation for GraphQL endpoints",
   "main": "dist/graphql-docs.js",
   "author": "Magnus Hallin <mhallin@fastmail.com>",
@@ -42,8 +42,8 @@
     "yargs": "^5.0.0"
   },
   "devDependencies": {
-    "babel-core": "^6.7.7",
     "babel-cli": "^6.7.7",
+    "babel-core": "^6.7.7",
     "babel-eslint": "^6.0.4",
     "babel-loader": "^6.2.4",
     "babel-plugin-contracts": "^1.1.1",
